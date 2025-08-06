@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="titulo">EDITOR DE MENSAGEM</h1>
+    <label for="mensagem">Mensagem</label>
+    <input type="text" id="msg" />
+
+    <button id="red" class="botoes">Red</button>
+    <button id="blue" class="botoes">Blue</button>
+    <button id="yellow" class="botoes">Yellow</button>
+    <button id="green" class="botoes">Green</button>
+    <button id="pink" class="botoes">Pink</button>
+
+    <button id="Limpar">Limpar</button>
+
+    <script>
+      const titulo = document.querySelector(".titulo");
+      const msg = document.getElementById("msg");
+      const red = document.querySelector("#red");
+      const blue = document.querySelector("#blue");
+      const yellow = document.querySelector("#yellow");
+      const green = document.querySelector("#green");
+      const pink = document.querySelector("#pink");
+      const limpar = document.getElementById("limpar");
+
+      limpar.addEventListener("click", () => {
+        msg.document.innerText = " sdasd";
+      });
+
+      red.addEventListener("click", () => {
+        msg.style.color = "red";
+      });
+      blue.addEventListener("click", () => {
+        msg.style.color = "blue";
+      });
+      yellow.addEventListener("click", () => {
+        msg.style.color = "yellow";
+      });
+      green.addEventListener("click", () => {
+        msg.style.color = "green";
+      });
+      pink.addEventListener("click", () => {
+        msg.style.color = "pink";
+      });
+    </script>
+  </body>
+</html>
