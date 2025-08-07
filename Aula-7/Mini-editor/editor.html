@@ -66,6 +66,10 @@
         background: black;
         color: white;
       }
+      #resposta {
+        margin-top: 60px;
+        font-size: 2rem;
+      }
     </style>
     <h1 class="titulo">EDITOR DE MENSAGEM</h1>
     <label for="mensagem">Mensagem</label>
@@ -99,25 +103,31 @@
       red.addEventListener("click", () => {
         msg.style.color = "red";
         titulo.style.color = "red";
+        resposta.style.color = "red";
       });
       blue.addEventListener("click", () => {
         msg.style.color = "blue";
         titulo.style.color = "blue";
+        resposta.style.color = "blue";
       });
       yellow.addEventListener("click", () => {
         msg.style.color = "yellow";
         titulo.style.color = "yellow";
+        resposta.style.color = "yellow";
       });
       green.addEventListener("click", () => {
         msg.style.color = "green";
         titulo.style.color = "green";
+        resposta.style.color = "green";
       });
       pink.addEventListener("click", () => {
         msg.style.color = "rgb(202, 15, 140)";
         titulo.style.color = "rgb(202, 15, 140)";
+        resposta.style.color = "rgb(202, 15, 140)";
       });
       limpar.addEventListener("click", () => {
         msg.value = "";
+        resposta.innerText = "";
       });
       registrar.addEventListener("click", () => {
         resposta.innerHTML = msg.value;
