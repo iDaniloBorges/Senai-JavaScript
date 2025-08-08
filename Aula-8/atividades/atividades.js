@@ -54,16 +54,16 @@ if (lado1 == lado2 && lado2 == lado3) {
 }
 
 // 5 - Múltiplo de  8 e 16
-// Verifique se um número é múltiplo de 5 e 7 simultaneamente.
+// Verifique se um número é múltiplo de 8 e 16 simultaneamente.
 
 let numeroMultiplo = parseInt(prompt("Digite um valor"));
-if (numeroMultiplo % 5 == 0 && numeroMultiplo % 7 == 0) {
+if (numeroMultiplo % 8 == 0 && numeroMultiplo % 16 == 0) {
   console.log(
-    `O número ${numeroMultiplo} É múltiplo de 5 e 7 simultâneamente.`
+    `O número ${numeroMultiplo} É múltiplo de 8 e 16 simultâneamente.`
   );
 } else {
   console.log(
-    `O número ${numeroMultiplo} NÃO É múltiplo de 5 e 7 simultâneamente.`
+    `O número ${numeroMultiplo} NÃO É múltiplo de 8 e 16 simultâneamente.`
   );
 }
 
@@ -92,3 +92,4 @@ if (numeroDivisivel % 9 == 0 && numeroDivisivel % 6 == 0) {
   console.log("O número não é divisivel por 6 ou 9.");
 
 }
+
