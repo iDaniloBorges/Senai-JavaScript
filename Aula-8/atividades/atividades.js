@@ -4,7 +4,7 @@
 // Peça um número ao usuário e verifique se é positivo, negativo ou zero.
 // promt()
 
-let numero = prompt("Digite um número");
+let numero = parseInt(prompt("Digite um número"));
 if (numero == 0) {
   console.log("O valor é 0!");
 } else if (numero < 0) {
@@ -16,7 +16,7 @@ if (numero == 0) {
 // 2 - Verificador de Votação
 // Peça a idade do usuário e verifique se pode votar.
 
-let idade = prompt("Digite sua idade");
+let idade = parseInt(prompt("Digite sua idade"));
 if (idade < 0) {
   console.log("Você ainda não nasceu!!!");
 } else if (idade >= 0 && idade < 18) {
@@ -28,7 +28,7 @@ if (idade < 0) {
 // 3 - Par ou Ímpar
 // Declare um número qualquer e determine se é par ou ímpar.
 
-let numeroQualquer = prompt("Digite um valor");
+let numeroQualquer = parseFloat(prompt("Digite um valor"));
 if (numeroQualquer % 2 == 0) {
   console.log("O número é par");
 } else {
@@ -41,9 +41,9 @@ if (numeroQualquer % 2 == 0) {
 // Isósceles (dois lados iguais)
 // Escaleno (todos lados diferentes)
 
-let lado1 = prompt("Digite o valor do primeiro lado");
-let lado2 = prompt("Digite o valor do segundo lado");
-let lado3 = prompt("Digite o valor do terceiro lado");
+let lado1 = parseFloat(prompt("Digite o valor do primeiro lado"));
+let lado2 = parseFloat(prompt("Digite o valor do segundo lado"));
+let lado3 = parseFloat(prompt("Digite o valor do terceiro lado"));
 
 if (lado1 == lado2 && lado2 == lado3) {
   console.log(`Os três lados são iguais. É um triângulo equilátero`);
@@ -56,7 +56,7 @@ if (lado1 == lado2 && lado2 == lado3) {
 // 5 - Múltiplo de  8 e 16
 // Verifique se um número é múltiplo de 5 e 7 simultaneamente.
 
-let numeroMultiplo = prompt("Digite um valor");
+let numeroMultiplo = parseInt(prompt("Digite um valor"));
 if (numeroMultiplo % 5 == 0 && numeroMultiplo % 7 == 0) {
   console.log(
     `O número ${numeroMultiplo} É múltiplo de 5 e 7 simultâneamente.`
@@ -71,7 +71,7 @@ if (numeroMultiplo % 5 == 0 && numeroMultiplo % 7 == 0) {
 // Verifique se um número atende às duas condições:
 // positivo e maior que 15
 
-let numeroPositivo = prompt("Digite um valor");
+let numeroPositivo = parseFloat(prompt("Digite um valor"));
 if (numeroPositivo > 15) {
   console.log(`O número ${numeroPositivo} é positivo e maior que 15.`);
 } else {
@@ -81,13 +81,14 @@ if (numeroPositivo > 15) {
 // 7 - Divisível por 9 e 6
 // Verifique se um número é divisível por 9 ou .6
 
-let numeroDiisivel = prompt("Digite um valor");
-if (numeroDiisivel % 9 == 0 && numeroDiisivel % 6 == 0) {
+let numeroDivisivel = parseInt(prompt("Digite um valor"));
+if (numeroDivisivel % 9 == 0 && numeroDivisivel % 6 == 0) {
   console.log("O número é divisivel por 9 e 6.");
-} else if (numeroDiisivel % 9 == 0) {
+} else if (numeroDivisivel % 9 == 0) {
   console.log("O número é divisivel por 9.");
-} else if (numeroDiisivel % 6 == 0) {
+} else if (numeroDivisivel % 6 == 0) {
   console.log("O número é divisivel por 6.");
 } else {
   console.log("O número não é divisivel por 6 ou 9.");
+
 }
