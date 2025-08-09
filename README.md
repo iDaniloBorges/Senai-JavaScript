@@ -13,11 +13,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 ##
 
-### Programação do curso
-https://senaisp.notion.site/programacao-em-python
-
-##
-
 📚 Atividades do Curso de JavaScript - SENAI
 Este repositório contém uma coleção de exercícios práticos resolvidos durante o curso de JavaScript no SENAI. As atividades envolvem o uso de HTML, CSS e JavaScript, com foco na construção de páginas, lógica de programação, design de interfaces e desenvolvimento de projetos completos.
 
